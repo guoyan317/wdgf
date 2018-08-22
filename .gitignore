@@ -1,0 +1,12 @@
+ngo ###
+*.pyc
+*.log
+*.pot
+*.rdb
+*.sqlite3
+.DS_Store
+.idea
+/log
+/uploads
+/venv
+__pycache__/

@@ -1,0 +1,46 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/public.css' %}"/>
+        <style>
+            body{
+                margin:0;
+                padding:0
+            }
+            .abc{
+                width: auto;
+                height: auto;
+                min-width: 100%;
+                min-height: 100%;
+                position: relative;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <video class="abc" autoplay="" loop="" style="background-image:url(>)">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+	<body>
+	</body>
+    <script src="{% static 'js/vue.min.js' %}"></script>
+    <script src="{% static 'js/axios.min.js' %}"></script>
+	<script type="text/javascript">
+        window.onload = function () {
+            //document.documentElement.style.fontSize=document.documentElement.clientWidth*20/750+'px';
+        }
+        var vm = new Vue({
+        	el: '#box',
+            delimiters: ['<%', '%>'],
+			data: {
+
+			},
+			methods: {
+
+            }
+    	})
+	</script>
+</html>
